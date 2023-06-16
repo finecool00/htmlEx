@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+        }
+
+        .box {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin: 0 auto;
+            
+        }
+
+        .photo{height: 194px;}
+        .photo, .detail {
+            float: left;
+            width: 50%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .content {
+            padding-bottom: 100px;
+        }
+
+        .cost {
+            border: 1px solid #777;
+            height: 25px;
+        } 
+        
+        .cost > .left {float: left;}
+        .cost > .right {float: right;}
+
+
+        .btn-area {overflow: hidden;}
+        .btn-area > .left {float: left;}
+        .btn-area > .right {float: right;}
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <!-- 왼쪽 -->
+        <div class="photo">
+            <img src="#" alt="사진">
+        </div>
+        <!-- 오른쪽 -->
+        <div class="detail">
+            <!-- 내용부분 -->
+            <div class="content">
+                <ul>
+                    <li>제목:패딩바텀 50px</li>
+                    <li>내용: 감사합니다!!</li>
+                </ul>
+            </div>
+            <!-- 가격부분 -->
+            <div class="cost">
+                <ul class="left">
+                    <li>가격</li>
+                </ul>
+                <strong class="right">10000원</strong>
+            </div>
+            <!-- 버튼부분 -->
+            <div class="btn-area">
+                <button class="left">장바구니</button>
+                <button class="right">구매하기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
