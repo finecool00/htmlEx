@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        article {
+            border: 1px solid #777;
+            width: 520px;
+            height: 375px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .img-area {
+            position: absolute;
+            top: 5px;
+            left: 10px;  
+        }
+
+        .text-area > .top {
+            
+            width: 380px;
+            height: 300px;
+            padding: 17px 0px 0px 120px;
+            
+
+        }
+        
+        .text-area > .top > .top-box {
+            border: 1px solid #777;
+            width: 380px;
+            height: 280px;
+            overflow-x: scroll;
+        }
+
+        .text-area > .top > .middle {
+            overflow: hidden;
+        }
+        .text-area > .top > .middle > .mid-box {
+            border: 1px solid #777;
+            width: 130px;
+            height: 20px;
+            float: left;
+            margin-top: 5px;
+        }
+        .text-area > .top > .middle > button {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .text-area > .top > .bottom {
+            border: 1px solid #777;
+            width: 130px;
+            height: 20px;
+            margin-top: 5px;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <article>
+        <!-- 이미지 영역-->
+        <img src="../img/bgimg.png" alt="물고기" class="img-area">
+        <!-- 텍스트 영역 -->
+        <div class="text-area">
+            <div class="top">
+                <textarea class="top-box">힌트 : 이미지영역에 position:absolute를 사용합니다. 텍스트영역은 패딩left를 사용합니다.</textarea>
+                <div class="middle">
+                    <div class="mid-box"></div>
+                    <button type="submit">등록하기</button>
+                </div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+    </article>
+
+</body>
+</html>

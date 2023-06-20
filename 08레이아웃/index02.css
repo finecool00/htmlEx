@@ -1,0 +1,50 @@
+@import url('reset.css');
+
+#header {
+    width: 100%px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 2px solid red;
+}
+
+#header .box1 {
+    float: left;
+    width: 33.3333%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#header .box1 .emoge {float: left; }
+#header .box1 .title {text-align: center; font-size: 30px; }
+#header .box1 .login_area {float: right; height: 40px;}
+#header > .box1 > .login_area > a {padding-left: 30px; margin-right: 10px;} 
+
+
+
+#header > .main_menu > .box {width: 100%; margin: 0 auto; text-align: center;}
+#header > .main_menu > .box > a {text-decoration: none; padding: 20px 30px; font-size: 20px;}
+
+
+/* 이미지 */
+
+#main_area {
+    background-image: url("../img/bg.jpg");
+    width: 100%;
+    height: 600px;
+}
+
+#main_area > .main_box > .title {text-align: center; color: #fff; font-size: 80px; padding-top: 130px;}
+#main_area > .main_box > .sub_title {text-align: center; color: #fff; font-size: 40px; padding-top: 100px;}
+
+.name_box {width: 100%; border-bottom: 3px dashed #ddd; padding: 10px 0;}
+.name_box > .list_name {font-size: 20px; text-align: center;}
+
+#list {border-bottom: 3px solid #ddd;}
+#list > .list_box {width: 1310px; margin: 0 auto;}
+#list > .list_box > .images {display: inline-block; padding: 90px;}
+#list > .list_box > .images > h2 {text-align: center; color: #ddd; font-size: 30px;}
+
+#footer {overflow: hidden; padding: 0 20px; height: 40px; line-height: 40px;}
+#footer > .left {float: left; font-size: 20px; margin: 0; padding: 0;}
+#footer > .right {float: right; font-size: 20px; margin: 0; padding: 0;}

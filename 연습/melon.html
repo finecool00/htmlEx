@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 최상단 메뉴 */
+        .top {
+            width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        /* 최상단 메뉴 왼쪽 */
+        .top > .left-menu {
+            float: left;
+            box-sizing: border-box;
+        }
+        .top > .left-menu > a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #999;
+        }
+        .top > .left-menu > a:hover {
+            color: rgb(50, 211, 50);
+        }
+        /* 최상단 메뉴 오른쪽 */
+        .top > .right-menu {
+            float: right;
+            box-sizing: border-box;
+        }
+        .top > .right-menu > a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #999;
+        }
+        .top > .right-menu > a:hover {
+            color: rgb(50, 211, 50);
+        }
+        .top > .right-menu > a > .b1 {
+            padding-right: 5px;
+            border-right: 1px solid #777;
+        }
+
+        /* title 검색영역(좌) */
+        .title {
+            width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .title > .box {
+            overflow: hidden;
+            box-sizing: border-box;
+            
+        }
+        .title > .box > .page-name {
+            float: left;
+            box-sizing: border-box;
+            font-size: 40px;
+            color: rgb(50, 211, 50);
+        }
+        .title > .box > .search-box {
+            float: left;
+            box-sizing: border-box;
+            border: 3px solid rgb(50, 211, 50);
+            border-radius: 30px;
+            width: 300px;
+            overflow: hidden;
+            height: 50px;
+            line-height: 50px;
+            margin: 5px 0px 0px 10px;
+        }
+        .title > .box > .search-box > input {
+            float: left;
+            font-size: 16px;
+            margin: 12px 10px 0px 10px;
+            
+        }
+        .title > .box > .search-box > button {
+            float: right;
+            margin: 10px 10px 0px 0px;
+        }
+
+        /* title 배너(우) */
+        .title .box > .right {
+            float: right;
+            box-sizing: border-box;
+        }
+
+        /* 네비 메뉴 */
+        .navi-box {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .navi-box > .main-menu {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .navi-box > .main-menu > a:hover {
+            color: rgb(50, 211, 50);
+        }
+        
+        .navi-box > .main-menu > .left {
+            float: left;
+            box-sizing: border-box;
+            font-size: 18px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navi-box > .main-menu > .right {
+            float: right;
+            box-sizing: border-box;
+            font-size: 18px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 공연 리스트(사진) */
+        .list-box {
+            width: 1500px;
+            overflow: hidden;
+            box-sizing: border-box;
+            margin: 0 auto;
+
+        }
+       
+        .list-box > .card {
+            float: left;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        .list-box > .card > img {
+            width: auto; height: auto;
+            max-width: 250px;
+            max-height: 300px;    
+        }
+
+        .list-box > .card > strong, small {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 탑 메뉴 -->
+    <div class="top">
+        <div class="left-menu">
+            <a href="" ><b>워터멜론</b></a>
+        </div>
+        <div class="right-menu">
+            <a href="" ><b class="b1">로그인</b></a>
+            <a href="" ><b class="b1">회원가입</b></a>
+            <a href="" ><b class="b1">고객센터</b></a>
+            <a href="" ><b class="b1">이용안내</b></a>
+            <a href="" ><b>LANGUAGE</b></a>
+        </div>
+    </div>
+    <!-- title -검색영역, 배너 -->
+    <div class="title">
+        <div class="box">
+            <div class="page-name">
+                <b>워터멜론 티켓</b>
+            </div>
+            <div class="search-box">
+                <input type="text" name="검색창" id="top-search" placeholder="원하는 공연 / 전시 검색" style="border: none;">
+                <button>검색</button>
+            </div>
+            <div class="right">
+                <img src="../img/banner01.jpg" alt="배너없음">
+            </div>
+        </div>
+    </div>
+    <!-- nav 메뉴 -->
+    <div class="navi-box">
+        <nav class="main-menu">
+            <a href="" class="left"><b>홈</b></a>
+            <a href="" class="left"><b>콘서트</b></a>
+            <a href="" class="left"><b>뮤지컬/연극</b></a>
+            <a href="" class="left"><b>클래식</b></a>
+            <a href="" class="left"><b>전시/행사</b></a>
+            <a href="" class="left"><b>테마/지역</b></a>
+            <a href="" class="left"><b>랭킹</b></a>
+            <a href="" class="left"><b>티켓오픈소식</b></a>
+            <a href="" class="left"><b>이벤트</b></a>
+            <a href="" class="right"><b>마이티켓</b></a>
+            <a href="" class="right"><b>ForU</b></a>
+        </nav>
+    </div>
+    <!-- 공연리스트(사진) -->
+    <div class="list-box">
+        <div class="card">
+            <img src="../img/picture01.png" alt="공연사진"><br>
+            <strong>2023 롤링홀 28주년 공연 기획전</strong><br>
+            <small>롤링홀 기획전 모아모아</small>
+        </div>
+        <div class="card">
+            <img src="../img/picture02.png" alt="공연사진"><br>
+            <strong>세상을 바꾼 기적의 음악</strong><br>
+            <small>[단독] 사인 포토카드 증정</small>
+        </div>
+        <div class="card">
+            <img src="../img/picture03.png" alt="공연사진"><br>
+            <strong>뮤지컬 <프리다></strong><br>
+            <small>워터멜론 티켓 1열 보유</small>
+        </div>
+        <div class="card">
+            <img src="../img/picture04.png" alt="공연사진"><br>
+            <strong>박효신 공식 팬클럽 모집</strong><br>
+            <small>SOULTREE 2023</small>
+        </div>
+        <div class="card">
+            <img src="../img/picture05.png" alt="공연사진"><br>
+            <strong>스탠딩 에크 SAY YES TOUR</strong><br>
+            <small>워터멜론 티켓 단독판매</small>
+        </div>
+    </div>
+
+    <!-- 중간 메뉴 -->
+    
+
+</body>
+</html>

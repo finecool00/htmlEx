@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        #hat {
+            position: fixed; /* z축으로 올려서 고정. 따라다니게 함 */
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+
+            z-index: 5; /* 포지션이 겹칠 때 z축의 높이(더 큰 값이 위로올라감) */
+        }
+        #art {height: 500px; background-color: aqua; margin-top: 120px;}
+        #sec {height: 2000px; background-color: yellow;}
+
+        #top-btn {
+            position: fixed; 
+            top: 10px; 
+            right: 10px;
+            background-color: brown;
+            z-index: 10;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <aside id="top-btn">
+        TOP
+    </aside>
+
+    <header id="hat">
+        <img src="../img/bgimg.png">
+        <nav>
+            메뉴...
+        </nav>
+    </header>
+
+    <article id="art">
+        메인 아티클 영역
+    </article>
+
+    <section id="sec">
+        메인 본문 영역
+    </section>
+
+</body>
+</html>
