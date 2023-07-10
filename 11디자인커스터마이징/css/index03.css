@@ -1,0 +1,57 @@
+.container {
+    width: 1170px;
+}
+
+.row {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.my-datail {
+    width: 100%;
+}
+.my-photo {
+    width: 100%;
+}
+
+.detail-info .title {
+    font-size: 24px;
+}
+
+.detail-info .price {
+    font-size: 30px;
+    border-top: 1px solid #bbb;
+    padding: 10px 0;
+}
+
+.detail-info .delivery {
+    color: #777;
+    font-size: 5px;
+    border-top: 1px solid #bbb;
+    padding: 10px 0;
+}
+
+.buying .costs {
+    overflow: hidden;
+}
+.buying .costs .left {
+    float: left;
+}
+.buying .costs .right {
+    float: right;
+    font-size: 30px;
+}
+
+.buying .buttons {
+    overflow: hidden;
+}
+.buying .buttons .left {
+    float: left;
+
+    width: 50%;
+}
+.buying .buttons .right {
+    float: right;
+    width: 50%;
+}
